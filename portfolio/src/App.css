@@ -10,7 +10,30 @@ html {
     font-family: "Lato", sans-serif;
 }
 
+body {
+    background-color: #123C69;
+    color: whitesmoke
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
 section {
     height: 100vh;
     scroll-snap-align: center;
+}
+
+
+.course {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.course--box {
+    width: 200px;
+    height:200px;
+    background-color: white;
 }

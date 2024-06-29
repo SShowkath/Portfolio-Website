@@ -1,0 +1,28 @@
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.navbar {
+    height: 100px;
+    
+}
+
+nav {
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 100%;
+}
+
+.socials {
+    display: flex;
+    gap: 10px
+}
+
+.navbar--title {
+    font-weight: bold;
+}
