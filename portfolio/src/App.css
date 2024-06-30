@@ -25,6 +25,9 @@ section {
     scroll-snap-align: center;
 }
 
+.section--portfolio {
+    height:fit-content;
+}
 
 .course {
     height: 100vh;
