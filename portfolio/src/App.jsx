@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import Contact from './components/Contact/Contact.jsx'
 import Portfolio from './components/Portfolio/Portfolio.jsx'
-
+import About from './components/About/About.jsx'
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
         <Navbar/>
         <Hero/>
       </section>
+      <section><About/></section>
       <section className="section--portfolio"><Portfolio/></section>
       <section><Contact/></section>
       
