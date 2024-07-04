@@ -1,6 +1,6 @@
 .hero {
     height: calc(100vh - 100px);
-    background: #202023;
+    background: #314455;
     overflow: hidden;
     position: relative;
     ;
@@ -18,8 +18,10 @@
 
 .hero--button {
     padding: 10px 20px;
-    // background-color: #2B7A78    ;
-    color: grey;
+    background-color: #C96567    ;
+    color: whitesmoke;
+    border-radius: 100px;
+    font-size: 20px;
     border: none;
     font-weight: bold;
     cursor: pointer;
@@ -52,7 +54,7 @@
 .hero--h1 {
     font-size: 75px;
     font-weight: bold;
-    color: whitesmoke;
+    color: #97AABD;
     letter-spacing: 1px;
     width: 80vw;
     

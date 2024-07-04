@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css";
+import "./Navbar.scss";
 import {motion} from "framer-motion";
 
 
@@ -19,9 +19,9 @@ export default function Navbar () {
                         animate={{opacity: 1, scale:1}}
                         transition={{duration:1}}
                     >
-                        <a href="#"><img className="icon" src="/linkedin.png"/></a>
-                        <a href="#"><img className="icon" src="/github.png"/></a>
-                        <a href="#"><img className="icon" src="/email.png"/></a>
+                        <a href="https://www.linkedin.com/in/shahrukh-showkath/"><img className="icon" src="/linkedin.png"/></a>
+                        <a href="https://github.com/SShowkath/"><img className="icon" src="/github.png"/></a>
+                        <a href="mailto:shahrukhshowkath@gmail.com"><img className="icon" src="/email.png"/></a>
                     </motion.div>
                 </nav>
             </div>
