@@ -16,7 +16,7 @@ function App() {
         <Navbar/>
         <Hero/>
       </section>
-      <section><About/></section>
+      
       <section className="section--portfolio"><Portfolio/></section>
       <section><Contact/></section>
       
