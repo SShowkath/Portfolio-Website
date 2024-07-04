@@ -1,22 +1,25 @@
 .hero {
     height: calc(100vh - 100px);
-    background: linear-gradient(180deg, #2B7A78, #3AAFA9);
+    background: #202023;
     overflow: hidden;
     position: relative;
-
+    ;
 }
 
 .hero--wrapper {
     max-width: 1366px;
     height:100%;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .hero--button {
     padding: 10px 20px;
-    background-color: #2B7A78;
-    color: #DEF2F1;
+    // background-color: #2B7A78    ;
+    color: grey;
     border: none;
     font-weight: bold;
     cursor: pointer;
@@ -24,11 +27,13 @@
 
 .hero--textContainer {
     height: 100%;
+   
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 40px;
+    
 }
 
 .hero--buttons{
@@ -38,17 +43,24 @@
 }
 
 .hero--h2{
-    font-size: 2rem;
+    font-size: 1,5rem;
     font-weight: bold;
-    color: #17252A;
+    color: whitesmoke;
     
 }
 
 .hero--h1 {
-    font-size: 44px;
+    font-size: 75px;
     font-weight: bold;
-    color: #17252A;
-    letter-spacing: 5px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    width: 80vw;
+    
+
+}
+.hero--title {
+    display: flex;
+    
 }
 
 .imageContainer {
@@ -66,7 +78,10 @@
 }
 
 .hero--profile {
-    height: 50%;
+    height: 200px;
+    
+    border: 1px solid white;
+    
     object-fit: cover;
     border-radius: 50%;
 }

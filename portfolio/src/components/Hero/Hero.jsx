@@ -1,5 +1,5 @@
 import React from "react";
-import "./Hero.css";
+import "./Hero.scss";
 import {motion} from "framer-motion";
 
 
@@ -12,7 +12,11 @@ export default function Hero () {
                 animate={{opacity:1, scale:1, x:0, y:0}}                    
                 transition={{duration:1.5}}
                 >
-                    <h2 className="hero--h1">SHAHRUKH SHOWKATH</h2>
+                    <div className="hero--title">
+                        <h2 className="hero--h1">SHAHRUKH SHOWKATH</h2>
+                        <img className="hero--profile" src="/me.jpg"/>
+                    </div>
+                    
                     <h1 className="hero--h2">   Solutions-driven student exploring deep learning for CV and multimodal tasks. Research experience in CV, NLP, and Bayesian ML as well as industry software engineering roles.</h1>
                     <div className="hero--buttons">
                         <button className="hero--button">Contact Me</button>
@@ -28,8 +32,8 @@ export default function Hero () {
                     </div>
                 </motion.div>
                 <div className="imageContainer">
-                <img className="hero--profile" src="/me.jpg"/>
-            </div>   
+                    
+                </div>   
             </div>
 
                      

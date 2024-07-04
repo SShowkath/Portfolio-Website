@@ -1,14 +1,18 @@
 import React from "react";
 import {motion} from "framer-motion";
-import "./Contact.css";
+import "./Contact.scss";
 
 
 export default function Contact () {
     return (
         <div className="contact">
-            <h1>Contact me</h1>
-            <h3>email</h3>
-            <h3>linkedin</h3>
+            <div className="textContainer">
+                <h1>Let's work together</h1>
+                <div className="item">
+                    <h2>Mail</h2>
+                    <span>shahrukhshowkath@gmail.com</span>
+                </div>
+            </div>
             
         </div>
 

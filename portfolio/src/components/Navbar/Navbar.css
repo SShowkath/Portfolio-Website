@@ -5,6 +5,7 @@
 
 .navbar {
     height: 100px;
+    background-color: #202023;
     
 }
 
@@ -16,6 +17,7 @@ nav {
     align-items: center;
     padding: 0 2rem;
     height: 100%;
+    border-bottom: 2px solid white;
 }
 
 .socials {
@@ -25,4 +27,5 @@ nav {
 
 .navbar--title {
     font-weight: bold;
+    color: whitesmoke;
 }
