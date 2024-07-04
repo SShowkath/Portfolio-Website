@@ -2,18 +2,18 @@
 .navbar {
     height: 100px;
     background-color: #314455;
-    
+    z-index: 10000;
 }
 
 nav {
     max-width: 1366px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 2rem;
     height: 100%;
-    border-bottom: 2px solid white;
+    // border-bottom: 2px solid white;
 }
 
 .socials {

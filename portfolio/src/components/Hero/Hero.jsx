@@ -18,22 +18,8 @@ export default function Hero () {
                     </div>
                     
                     <h1 className="hero--h2">   Solutions-driven student exploring deep learning for CV and multimodal tasks. Research experience in CV, NLP, and Bayesian ML as well as industry software engineering roles.</h1>
-                    <div className="hero--buttons">
-                        <button className="hero--button">Contact Me</button>
-                        <button className="hero--button">Projects</button>
-                    </div>
-                    <div>
-                        <motion.img className="hero--scroll" 
-                        src="/scroll.png"
-                        initial={{opacity: 1, scale:1}}
-                        animate={{opacity:0.3, scale:1}}                    
-                        transition={{duration:3}}
-                        />
-                    </div>
-                </motion.div>
-                <div className="imageContainer">
                     
-                </div>   
+                </motion.div>
             </div>
 
                      

@@ -12,13 +12,18 @@ function App() {
 
   return (
     <>
+    
       <section id="Homepage">
-        <Navbar/>
-        <Hero/>
+      <Navbar/>
+        <Hero/> 
       </section>
       
-      <section className="section--portfolio"><Portfolio/></section>
+      <section className="section--portfolio">
+        <Portfolio/>
+      </section>
       <section><Contact/></section>
+      
+
       
     </>
   )
