@@ -6,27 +6,27 @@ export default function Experience() {
         {
           title: 'Software Engineer Intern - JP Morgan Chase.',
           date: 'Jun 2024 - Aug 2024',
-          description: 'Worked on developing scalable web applications.',
+          description: 'stuff',
         },
         {
-          title: 'Web Developer',
-          date: 'Jun 2018 - Dec 2019',
-          description: 'Built and maintained websites for various clients.',
+          title: 'intern',
+          date: 'x',
+          description: 'stuff',
         },
         {
           title: 'Intern',
-          date: 'Jan 2018 - May 2018',
-          description: 'Assisted in the development of internal tools and utilities.',
+          date: 'x',
+          description: 'stuff',
         },
         {
-            title: 'Software Engineer',
-            date: 'Jan 2020 - Present',
-            description: 'Worked on developing scalable web applications.',
+            title: 'intern',
+            date: 'x',
+            description: 'Wstuff',
           },
           {
-            title: 'Web Developer',
-            date: 'Jun 2018 - Dec 2019',
-            description: 'Built and maintained websites for various clients.',
+            title: 'intern',
+            date: 'Jx',
+            description: 'stuff',
           },
       ];
 

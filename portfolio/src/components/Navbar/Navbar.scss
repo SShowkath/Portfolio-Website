@@ -3,60 +3,68 @@
     left: 0;
     top: 0;
     width: 15vw;
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-right: 2px solid white;
     justify-content: center;
     background-color: #314455;
-    
     z-index: 10000;
+    
 }
 
 .navbar {
-    width: 100%; /* Ensure the navbar stretches the full height of its container */
+    width: 100%;
     height: 100%;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    // margin-left: 1rem;
-    justify-content: center;    
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 50vh;
-    
-    width: 100%;
+    flex: 1; /* Take full height within navbar */
+    h3 {
+        font-size: 20px; /* Adjusted font size for buttons */
+        margin: 0; /* Remove default margins */
+    }
 }
 
 .socials {
-    justify-self: center;
-    
     display: flex;
-    flex-direction: column; /* Stack social icons vertically */
-    gap: 10px;
-    justify-content: center;
-    margin-top: auto; /* Push icons to the bottom */
-
-    button {
-        background:transparent;
-        border: none;
-        color: inherit;
-        cursor: pointer;
-    }
-
-    button:hover{
-        scale:120%;
-    }
+    flex-direction: column;
+    gap: 20px; /* Adjust vertical spacing between buttons */
+    align-items: center;
 }
+
+button {
+    background: transparent;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+button:hover {
+    transform: scale(1.1); /* Scale slightly on hover */
+}
+
+
 
 .navbar--title {
     font-weight: bold;
     color: whitesmoke;
     font-size: 30px;
-    margin-bottom: 20px; /* Adjust spacing */
+    margin-bottom: 20px;
+}
+
+
+button.active {
+    font-weight: 500;
+    color: #C96567; 
+    scale: 140%;
 }

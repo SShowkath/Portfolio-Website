@@ -55,6 +55,7 @@ export default function Portfolio() {
                     <PortfolioCard key={index} project={project} />
                 ))}
             </div>
+            <p id="portfolio-end">.</p>
         </div>
     );
 }
@@ -91,6 +92,7 @@ const PortfolioCard = ({ project }) => {
                 </motion.div>
                 
             </div>
+            
         </a>
     );
 };

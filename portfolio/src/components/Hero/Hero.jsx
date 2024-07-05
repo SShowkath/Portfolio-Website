@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 
 export default function Hero () {
     return (
-        <div className="hero">
+        <div id="About" className="hero">
             <div className="hero--wrapper">
                 <motion.div className="hero--textContainer"
                 initial={{opacity: 0, scale:0.8, x:-50, y:-50}}
@@ -13,7 +13,7 @@ export default function Hero () {
                 transition={{duration:1.5}}
                 >
                     <div className="hero--title">
-                        <h2 className="hero--h1">SHAHRUKH SHOWKATH</h2>
+                        <h2 className="hero--h1">ABOUT ME</h2>
                         <img className="hero--profile" src="/me.jpg"/>
                     </div>
                     

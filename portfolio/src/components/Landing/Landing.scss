@@ -1,0 +1,20 @@
+.Landing {
+    margin-left: 15vw;
+    width: 85vw;
+    height: 100vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    border-radius: 100px;
+    // background-color: red;
+    h1 {
+        color: #C96567;
+        font-size: 88px;
+    }
+    h3 {
+        color: #97AABD;
+        font-size: 50px;
+    }
+}
