@@ -1,7 +1,7 @@
 .hero {
     height: calc(100vh - 100px);
     // height: 100vh;
-    background: #314455;
+    background: #F0E2D2;
     overflow: hidden;
     position: relative;
     margin-left: 10vw;
@@ -50,10 +50,10 @@
 .hero--h2{
     font-size: 1.25rem;
     line-height: 2rem;
-    color: whitesmoke;
+    color: #364042;
     
     a {
-        color: #C96567;
+        color: #D18266;
     }
     
 }
@@ -61,7 +61,7 @@
 .hero--h1 {
     font-size: 75px;
     font-weight: bold;
-    color: #9E5A63;;
+    color: #5B6D92;;
     letter-spacing: 1px;
     width: 80vw;
     
@@ -89,7 +89,7 @@
 .hero--profile {
     height: 200px;
     
-    border: 1px solid white;
+    border: 1px solid #D18266;
     
     object-fit: cover;
     border-radius: 50%;

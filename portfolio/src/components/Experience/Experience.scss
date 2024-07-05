@@ -1,5 +1,5 @@
 .Experience {
-    background-color: #314455;
+    background-color: #F0E2D2;
     
     overflow: hidden;
     display: flex;
@@ -13,7 +13,7 @@
         font-size: 60px;
         
         text-align: center;
-        color: #9E5A63;
+        color: #5B6D92;
         margin-bottom: 8%;
     }
 
@@ -37,7 +37,7 @@
         left: 58%;
         height: 100%;
         width: 6px;
-        background-color: whitesmoke;
+        background-color: #D18266;
         z-index: 1;
     }
     .timeline {
@@ -65,6 +65,7 @@
     .timeline-content:hover {
         scale:105%;
         opacity: 1;
+        
     }
 
     
@@ -82,14 +83,14 @@
 
     .timeline-content {
         padding: 20px 30px;
-
-        background-color: whitesmoke;
+        
+        background-color: #EFEEE5;
         position: relative;
         border-radius: 6px;
         height: 22.5vh;
         font-size: 18px;
         font-weight: 300;
-        color: black;
+        color: #364042;
         ;
         h2 {
             font-weight: 600;
@@ -111,7 +112,7 @@
             z-index: 1;
             border-top: 15px solid transparent;
             border-bottom: 15px solid transparent;
-            border-left: 15px solid whitesmoke;
+            border-left: 15px solid #EFEEE5;
             right: -14px;
         }
 
@@ -123,7 +124,7 @@
             z-index: 1;
             border-top: 15px solid transparent;
             border-bottom: 15px solid transparent;
-            border-right: 15px solid whitesmoke;
+            border-right: 15px solid #EFEEE5;
             left: -14px;
         }
     }
