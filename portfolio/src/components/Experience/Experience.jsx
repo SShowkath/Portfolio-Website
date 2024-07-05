@@ -5,33 +5,52 @@ import { motion, useInView } from "framer-motion";
 export default function Experience() {
     const experiences = [
         {
-          title: 'SWE Intern - JP Morgan Chase',
+          title: 'JP Morgan Chase',
           date: 'Summer 2024',
-          description: 'Current',
+          description: 'Returned to JPMC as a SWE intern for Financial Data Integration team for Corporate Technology',
           img: "./public/JP_Morgan_logo.png"
         },
         {
-          title: 'Research Assistant - DesignAI Group',
+          title: 'DesignAI Group',
           date: 'Jan - May 2024',
-          description: 'Built an intelligent medical literature assistant using a retrieval augmented generation (RAG) pipeline, optimizing information retrieval and analyzing explanation quality metrics for user feedback.',
+          description: 'Research assistant for Dr. Qian Yang\'s group, where I worked on a RAG pipeline for a medical literature assistant that personalizes research summaries for users',
           img: "./public/cornell.png"
         },
         {
-          title: 'SWE Intern - JP Morgan Chase',
+            title: 'Cornell University',
+            date: 'Jan - Dec 2024 (Expected)',
+            description: 'Continued education to pursue a Masters of Engineering in Computer Science at Cornell Univeristy.',
+            img: "./public/cornell.png"
+          },
+        {
+            title: 'University of Texas at Dallas',
+            date: '2021 - Fall 2023',
+            description: 'Graduated with a B.S. in Computer Science',
+            img: "./public/utd.jpg"
+          },
+        {
+          title: 'JP Morgan Chase',
           date: 'Summer 2023',
-          description: 'Created a Terraform module management tool with a TKinter GUI, optimized Grafana API calls for faster data retrieval, automated parameter updates with Selenium, and streamlined deployment using PyInstaller.',
+          description: "SWE intern on the Global Banking Platform team, where I designed and built a TerraForm lifecycle management application to streamline infrastructure provisioning.",
           img: "./public/JP_Morgan_logo.png"
         },
         {
-            title: 'Research Assistant - COINS Lab',
-            date: 'May - Dec 2022',
-            description: 'Collaborated with Dr. Richard Golden on cognitive diagnostic modeling using R to assess examination question skills in ACED and Fraction-Subtraction datasets. Designed an intelligent GUI in Julia for skill assignment and interrelation analysis via Q-Matrix and OMEGA-Matrix.',
-            img: "./public/utd.jpg"
+            title: 'ACM UT Dallas',
+            date: 'Jan - May 2023',
+            description: 'Conducted research under Dr. Katherine Brown on using CV models to pinpoint and effectively diagnose cardiothoracic diseases based on chest scans.',
+            img: "./public/acm.jpg"
           },
+        {
+            title: 'COINS Lab',
+            date: 'May - Dec 2022',
+            description: 'Research Assistant for Dr. Richard Golden, where I developed cognitive diagnostic models to assess examination question skills via an intelligent GUI for skill assignment and interrelation analysis.',
+            img: "./public/coins.png"
+          },
+          
           {
             title: 'Teaching Intern - Codeucate',
             date: 'Summer 2020',
-            description: 'Developed and taught beginner to intermediate Java, JavaScript, Python, and Scratch courses to over 100 students',
+            description: 'Developed and taught beginner to intermediate Java, JavaScript, Python, and Scratch courses to 100+ students',
             img: "./public/codeucate.jpg"
           },
       ];
@@ -39,7 +58,7 @@ export default function Experience() {
     return (
         <div id="Experience" className="Experience">
             <div className="timeline-wrapper">
-                <h1>Experience</h1>
+                <h1>What I've Done</h1>
                 <div className="timeline">
                     {experiences.map((exp, index) => {
                         const ref = useRef(null);
@@ -60,8 +79,8 @@ export default function Experience() {
                                 ref={ref}
                                 key={index}
                                 initial={{ opacity: 0, y:-100 }}
-                                animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -100}}
-                                transition={{ duration: 1 }}>
+                                animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -50}}
+                                transition={{ duration: 1.35 }}>
                                     <h2>{exp.title}</h2>
                                     <small>{exp.date}</small>
                                     <p>{exp.description}</p>
