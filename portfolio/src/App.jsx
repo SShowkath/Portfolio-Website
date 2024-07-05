@@ -6,6 +6,7 @@ import Hero from './components/Hero/Hero'
 import Contact from './components/Contact/Contact.jsx'
 import Portfolio from './components/Portfolio/Portfolio.jsx'
 import Experience from './components/Experience/Experience.jsx'
+import Ratings from './components/Ratings/Ratings.jsx'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Portfolio/>
       </section>
       <section><Hero/></section>
+      
       <section><Contact/></section>
       
 

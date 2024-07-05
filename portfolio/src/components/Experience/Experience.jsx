@@ -48,7 +48,7 @@ export default function Experience() {
           },
           
           {
-            title: 'Teaching Intern - Codeucate',
+            title: 'Codeucate',
             date: 'Summer 2020',
             description: 'Developed and taught beginner to intermediate Java, JavaScript, Python, and Scratch courses to 100+ students',
             img: "./public/codeucate.jpg"

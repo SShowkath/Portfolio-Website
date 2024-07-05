@@ -23,11 +23,11 @@ export default function Hero () {
                         as well as industry software engineering projects.
                     </h1>
                     <h1 className="hero--h2">I like to unwind by staying active, reading sci-fi, gaming, watching
-                        thought-provoking films, and eating the spiciest cuisine. 
+                        thought-provoking films, and eating the spiciest cuisines. 
                     </h1>
                     <h1 className="hero--h2">
                         Inspired by <a href="https://www.youtube.com/user/penguinz0" target="_blank" rel="noopener noreferrer">MoistCr1TiKaL's</a> "Moist Meter",
-                        I've started rating movies I've watched, games I've played, and books I've read. You can check out my ratings <a href="#" target="_blank" rel="noopener noreferrer">here</a>.
+                        I've started rating movies I've watched. You can check out my ratings <a href="https://letterboxd.com/shahrukh0/" target="_blank" rel="noopener noreferrer">here</a>.
                     </h1>
                 </motion.div>
             </div>
