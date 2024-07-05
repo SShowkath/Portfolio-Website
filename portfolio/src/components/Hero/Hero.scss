@@ -4,8 +4,8 @@
     background: #314455;
     overflow: hidden;
     position: relative;
-    margin-left: 15vw;
-    width: 85vw;
+    margin-left: 10vw;
+    width: 90vw;
 }
 
 .hero--wrapper {
@@ -48,16 +48,20 @@
 }
 
 .hero--h2{
-    font-size: 1,5rem;
-    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 2rem;
     color: whitesmoke;
+    
+    a {
+        color: #C96567;
+    }
     
 }
 
 .hero--h1 {
     font-size: 75px;
     font-weight: bold;
-    color: #97AABD;
+    color: #9E5A63;;
     letter-spacing: 1px;
     width: 80vw;
     

@@ -65,10 +65,7 @@ export default function Experience() {
                         const inView = useInView(ref, { once: true });
 
                         return (
-                            <div
-                                className={`timeline-item ${index % 2 === 0 ? 'even-class' : 'odd-class'}`}
-                                
-                            >
+                            <div className={`timeline-item ${index % 2 === 0 ? 'even-class' : 'odd-class'}`}>
                                 <motion.img src={exp.img} alt="experience-logo"
                                     ref={ref}
                                     key={index}
