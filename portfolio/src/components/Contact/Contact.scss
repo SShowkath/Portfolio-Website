@@ -6,6 +6,8 @@
     display: flex;
     align-items: center;    
     gap: 50px;
+    margin-left: 15vw;
+    width: 85vw;
 
     .textContainer {
         flex: 1;
@@ -21,9 +23,11 @@
             img {
                 height: 100px;
                 width: 100px;
+                opacity: 60%;
             }
             img:hover {
                 scale:150%;
+                opacity: 100%;
             }
         }
         
@@ -47,7 +51,7 @@
           filter: drop-shadow(0 0 5px #C96567);
         }
         50% {
-          stroke-width: 1;
+          stroke-width: 1.2;
           filter: drop-shadow(0 0 20px #C96567);
         }
         100% {

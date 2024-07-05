@@ -29,6 +29,10 @@ section {
 .section--portfolio {
     height:fit-content;
 }
+.section--experience
+{
+    height:fit-content;
+}
 
 .course {
     height: 100vh;

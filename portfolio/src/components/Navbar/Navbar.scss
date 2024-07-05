@@ -1,37 +1,62 @@
-
-.navbar {
-    height: 100px;
+.navbar-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15vw;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid white;
+    justify-content: center;
     background-color: #314455;
+    
     z-index: 10000;
 }
 
-nav {
-    max-width: 1366px;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 2rem;
+.navbar {
+    width: 100%; /* Ensure the navbar stretches the full height of its container */
     height: 100%;
-    // border-bottom: 2px solid white;
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    // margin-left: 1rem;
+    justify-content: center;    
+    align-items: center;
+    height: 50vh;
+    
+    width: 100%;
 }
 
 .socials {
+    justify-self: center;
+    
     display: flex;
+    flex-direction: column; /* Stack social icons vertically */
     gap: 10px;
+    justify-content: center;
+    margin-top: auto; /* Push icons to the bottom */
 
-    img {
-        height: 25px;
-        width: 25px;
-        scale: 150%;
-        margin: 10px;
+    button {
+        background:transparent;
+        border: none;
+        color: inherit;
+        cursor: pointer;
     }
-    img:hover {
-        scale:200%;
+
+    button:hover{
+        scale:120%;
     }
 }
+
 .navbar--title {
     font-weight: bold;
     color: whitesmoke;
     font-size: 30px;
+    margin-bottom: 20px; /* Adjust spacing */
 }

@@ -43,7 +43,7 @@ export default function Portfolio() {
 
     return (
         <div className="portfolio">
-            <div className="portfolio--text">
+            <div id="Projects"  className="portfolio--text">
                 <h1 className="portfolio--title">Projects</h1>
                 <h3 className="portfolio--subtitle">
                     A selection of some of my work
@@ -65,32 +65,32 @@ const PortfolioCard = ({ project }) => {
 
     return (
         <a href={project.link}>
-        <div className="portfolio--card">
-            <div className="portfolio--img-wrapper">
-                <motion.img
-                    className="portfolio--img"
+            <div className="portfolio--card">
+                <div className="portfolio--img-wrapper">
+                    <motion.img
+                        className="portfolio--img"
+                        ref={ref}
+                        animate={isInView ? { x: [1000, -100, 100, 0] } : {}}
+                        transition={{ type: "spring", inertia: 10, duration: 1 }}
+                        src={project.img}
+                        alt={project.title}
+                    />
+                </div>
+                
+                <motion.div className="card--text"
                     ref={ref}
-                    animate={isInView ? { x: [-1000, 100, -100, 0] } : {}}
-                    transition={{ type: "spring", inertia: 10, duration: 1 }}
-                    src={project.img}
-                    alt={project.title}
-                />
+                    animate={isInView ? { x: [1000, -100, 100, 0] } : {}}
+                    transition={{ type: "spring", inertia: 10, duration: 1 }}>
+                        <h1  className="card--titles" ><a href={project.link}>{project.title}<img src="/link.png"/></a></h1>
+                        <h3 className="card--descriptions">{project.description}</h3>
+                        <div className="portfolio--icons">
+                            {project.icons.map((icon, index) => (
+                                <div key={index}>{icon}</div>
+                            ))}
+                        </div>
+                </motion.div>
+                
             </div>
-            
-            <motion.div className="card--text"
-                ref={ref}
-                animate={isInView ? { x: [1000, -100, 100, 0] } : {}}
-                transition={{ type: "spring", inertia: 10, duration: 1 }}>
-                    <h1 className="card--titles" ><a href={project.link}>{project.title}<img src="/link.png"/></a></h1>
-                    <h3 className="card--descriptions">{project.description}</h3>
-                    <div className="portfolio--icons">
-                        {project.icons.map((icon, index) => (
-                            <div key={index}>{icon}</div>
-                        ))}
-                    </div>
-            </motion.div>
-            
-        </div>
         </a>
     );
 };

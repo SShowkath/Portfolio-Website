@@ -19,7 +19,7 @@ const variants = {
 
 export default function Contact () {
     return (
-        <motion.div className="contact" variants={variants} initial="initial" whileInView="animate">
+        <motion.div id="Contact" className="contact" variants={variants} initial="initial" whileInView="animate">
             <motion.div className="textContainer" variants={variants}>
                 <motion.h1>Let's work together</motion.h1>
                 <div className="contact--icons">
