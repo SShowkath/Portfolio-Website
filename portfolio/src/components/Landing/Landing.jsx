@@ -27,7 +27,7 @@ export default function Landing() {
                 initial="hidden"
                 animate="visible"
                 >
-                    {"Hello.".split("").map((char,index) => {
+                    {"Hi.".split("").map((char,index) => {
                         return (
                             <motion.span key={char + "-" + index} variants={letter}>
                                 {char}
