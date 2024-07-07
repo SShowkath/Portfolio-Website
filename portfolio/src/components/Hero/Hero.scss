@@ -1,5 +1,6 @@
 .hero {
     height: 100vh;
+    min-height: 100vh;
     background: #F0E2D2;
     overflow: hidden;
     position: relative;
@@ -36,6 +37,7 @@
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 10vh;
+    padding-bottom: 10vh;
 }
 
 .hero--h2 {
