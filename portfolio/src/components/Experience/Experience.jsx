@@ -25,7 +25,7 @@ export default function Experience() {
         {
             title: 'University of Texas at Dallas',
             date: '2021 - Fall 2023',
-            description: 'Graduated with a B.S. in Computer Science',
+            description: 'Graduated with a B.S. in Computer Science | Magna Cum Laude, Artificial Intelligence Society Officer',
             img: "./utd.jpg"
           },
         {
