@@ -1,5 +1,6 @@
 /* General styles */
 html {
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     background-color: #F0E2D2;
 }

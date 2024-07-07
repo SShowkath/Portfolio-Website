@@ -20,7 +20,7 @@ export default function Portfolio() {
         },
         
         {
-            title: "JPMorgan Code for Good Hackathon Project",
+            title: "JPMorgan Code for Good Hackathon",
             description: "Grow stronger communities, one bite at a time. This interactive website empowers The FunkyTown Food Project, a non-profit, with gamified volunteer tracking, streamlined event management, and engaging sustainable farming education.",
             img: "/cfg.jpg",
             icons: ["React", "Node.js", "Firebase"],
