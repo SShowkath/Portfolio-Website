@@ -43,9 +43,9 @@ export default function Portfolio() {
     ];
 
     return (
-        <div className="portfolio">
-            <div id="Projects"  className="portfolio--text">
-                <h1 className="portfolio--title">Projects</h1>
+        <div  className="portfolio">
+            <div   className="portfolio--text">
+                <h1 id="Projects" className="portfolio--title">Projects</h1>
                 <h3 className="portfolio--subtitle">
                     A selection of some of my work
                 </h3>

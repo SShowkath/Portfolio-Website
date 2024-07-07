@@ -70,3 +70,24 @@ button.active {
     scale: 140%;
 }
 
+.navbar-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 10vw;
+    height: 100vh;
+    display: none; // Hide by default
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    background-color: #F0E2D2;
+    z-index: 10000;
+    margin-left: 1%;
+}
+
+// Show navbar when screen width is greater than 768px
+@media (min-width: 769px) {
+    .navbar-container {
+        display: flex;
+    }
+}

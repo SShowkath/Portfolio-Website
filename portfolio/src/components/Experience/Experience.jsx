@@ -56,9 +56,9 @@ export default function Experience() {
       ];
 
     return (
-        <div id="Experience" className="Experience">
+        <div className="Experience">
             <div className="timeline-wrapper">
-                <h1>What I've Done</h1>
+                <h1  id="Experience">What I've Done</h1>
                 <div className="timeline">
                     {experiences.map((exp, index) => {
                         const ref = useRef(null);

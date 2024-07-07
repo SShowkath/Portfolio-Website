@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from "react";
-import "./Navbar.scss";
+import "./DesktopNavbar.scss";
 import { motion } from "framer-motion";
 
-export default function Navbar() {
+export default function DesktopNavbar() {
     const [activeSection, setActiveSection] = useState("Home");
+    const [isVisible, setIsVisible] = useState(true);  // Start with true for debugging
 
     useEffect(() => {
+        const handleResize = () => {
+            setIsVisible(window.innerWidth > 768); // Show navbar when width > 768px
+        };
+
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
 
@@ -23,11 +28,16 @@ export default function Navbar() {
             }
         };
 
-        // Attach scroll event listener
+        // Initial check
+        handleResize();
+
+        // Attach event listeners
+        window.addEventListener("resize", handleResize);
         window.addEventListener("scroll", handleScroll);
 
-        // Clean up scroll event listener on component unmount
+        // Clean up event listeners on component unmount
         return () => {
+            window.removeEventListener("resize", handleResize);
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
@@ -39,6 +49,13 @@ export default function Navbar() {
         }
     };
 
+    if (!isVisible) {
+        console.log("DesktopNavbar is not visible");
+        return null;
+    }
+
+    console.log("DesktopNavbar is rendering");
+
     return (
         <div className="navbar-container">
             <div className="navbar">
@@ -49,40 +66,18 @@ export default function Navbar() {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1, delay: 1.5 }}
                     >
-                        <button
-                            className={activeSection === "Home" ? "active" : ""}
-                            onClick={() => scrollToSection("Home")}
-                        >
-                            <h3>Home</h3>
-                        </button>
-                        <button
-                            className={activeSection === "Experience" ? "active" : ""}
-                            onClick={() => scrollToSection("Experience")}
-                        >
-                            <h3>Experience</h3>
-                        </button>
-                        <button
-                            className={activeSection === "Projects" ? "active" : ""}
-                            onClick={() => scrollToSection("Projects")}
-                        >
-                            <h3>Projects</h3>
-                        </button>
-                        <button
-                            className={activeSection === "About" ? "active" : ""}
-                            onClick={() => scrollToSection("About")}
-                        >
-                            <h3>About</h3>
-                        </button>
-                        <button
-                            className={activeSection === "Contact" ? "active" : ""}
-                            onClick={() => scrollToSection("Contact")}
-                        >
-                            <h3>Contact</h3>
-                        </button>
+                        {["Home", "Experience", "Projects", "About", "Contact"].map((section) => (
+                            <button
+                                key={section}
+                                className={activeSection === section ? "active" : ""}
+                                onClick={() => scrollToSection(section)}
+                            >
+                                <h3>{section}</h3>
+                            </button>
+                        ))}
                     </motion.div>
                 </nav>
             </div>
         </div>
     );
 }
-
