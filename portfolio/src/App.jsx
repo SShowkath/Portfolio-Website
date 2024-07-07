@@ -31,7 +31,7 @@ function App() {
         <section className="section--portfolio">
           <Portfolio/>
         </section>
-        <section><Hero/></section>
+        <section className="section--hero"><Hero/></section>
         <section><Contact/></section>
       </div>
     </div>

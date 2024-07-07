@@ -28,7 +28,7 @@ section {
 }
 
 .section--portfolio,
-.section--experience {
+.section--experience,.section--hero {
     height: fit-content;
 }
 
