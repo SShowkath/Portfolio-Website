@@ -30,7 +30,7 @@
 }
 
 .hero--textContainer {
-    height: 100%;
+    height: fit-content;
     margin-top: 10vh;
     width: 90vw;
     display: flex;
@@ -44,6 +44,7 @@
     font-size: 1.25rem;
     line-height: 2rem;
     color: #364042;
+    
 }
 
 .hero--h2 a {
