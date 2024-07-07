@@ -43,7 +43,7 @@ export default function Experience() {
         {
             title: 'COINS Lab',
             date: 'May - Dec 2022',
-            description: 'Research Assistant for Dr. Richard Golden, where I developed cognitive diagnostic models to assess examination question skills via an intelligent GUI for skill assignment and interrelation analysis.',
+            description: 'Research Assistant for Dr. Richard Golden, where I developed cognitive diagnostic models to assess a student\'s skills via an intelligent GUI for skill assignment and interrelation analysis.',
             img: "./coins.png"
           },
           
