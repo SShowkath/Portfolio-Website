@@ -1,15 +1,16 @@
 .hero {
-    height: calc(100vh - 100px);
+    height: 100vh;
     // height: 100vh;
     background: #F0E2D2;
     overflow: hidden;
     position: relative;
-    margin-left: 10vw;
+    // margin-left: 10vw;
     width: 90vw;
+    min-width: 100vw;
+    max-width: 100vw;
 }
 
 .hero--wrapper {
-    
     max-width: 1366px;
     height:100%;
     margin: auto;
@@ -33,17 +34,11 @@
 .hero--textContainer {
     height: 100%;
     margin-top: 10vh;
-    width: 50%;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     
-    gap: 40px;
-    
-}
-
-.hero--buttons{
-    display: flex;
-    gap: 20px;
+    gap: 1rem;
     
 }
 
@@ -59,11 +54,12 @@
 }
 
 .hero--h1 {
-    font-size: 75px;
+    // font-size: 75px;
+    font-size: 3.5rem;
     font-weight: bold;
     color: #5B6D92;;
     letter-spacing: 1px;
-    width: 80vw;
+    width:20vw;
     
 
 }
@@ -79,18 +75,113 @@
     top:0;
     right:0;
     margin-top: 8rem;
-    margin-right:10rem;
+    margin-right:1rem;
 }
 
-.hero--scroll {
-    height:50px;    
-}
 
 .hero--profile {
-    height: 200px;
-    
+    height: 10rem;
+    margin-left: 32.5vw;
     border: 1px solid #D18266;
-    
     object-fit: cover;
     border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: calc(100vh - 100px);
+        // height: 100vh;
+        background: #F0E2D2;
+        overflow: hidden;
+        position: relative;
+        margin-left: 10vw;
+        width: 90vw;
+    }
+    
+    .hero--wrapper {
+        
+        max-width: 1366px;
+        height:100%;
+        margin: auto;
+        display: flex;
+        align-content: baseline;
+        justify-content: center;
+    }
+    
+    
+    .hero--button {
+        padding: 10px 20px;
+        background-color: #C96567    ;
+        color: whitesmoke;
+        border-radius: 100px;
+        font-size: 20px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .hero--textContainer {
+        height: 100%;
+        margin-top: 10vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        ;
+        gap: 40px;
+        
+    }
+    
+    .hero--buttons{
+        display: flex;
+        gap: 20px;
+        
+    }
+    
+    .hero--h2{
+        font-size: 1.25rem;
+        line-height: 2rem;
+        color: #364042;
+        
+        a {
+            color: #D18266;
+        }
+        
+    }
+    
+    .hero--h1 {
+        font-size: 75px;
+        font-weight: bold;
+        color: #5B6D92;;
+        letter-spacing: 1px;
+        width: 80vw;
+        
+    
+    }
+    .hero--title {
+        display: flex;
+        
+    }
+    
+    .imageContainer {
+        height: 100%;
+        /* background-color: red; */
+        position: absolute;
+        top:0;
+        right:0;
+        margin-top: 8rem;
+        margin-right:11rem;
+    }
+    
+    .hero--scroll {
+        height:50px;    
+    }
+    
+    .hero--profile {
+        height: 200px;
+        margin-left: 0w;
+        border: 1px solid #D18266;
+        
+        object-fit: cover;
+        border-radius: 50%;
+    }
 }

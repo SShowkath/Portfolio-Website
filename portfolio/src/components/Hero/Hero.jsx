@@ -22,7 +22,7 @@ export default function Hero () {
                         >ABOUT ME
                         </motion.h2>
                         <motion.img 
-                        initial={{opacity: .5, x:200}}
+                        initial={{opacity: .5, x:50}}
                         whileInView={{
                             opacity: 1,
                             x: 0, 
