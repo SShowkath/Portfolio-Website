@@ -22,7 +22,7 @@ export default function Contact () {
         <div id="Contact" >
             <motion.div className="contact" variants={variants} initial="initial" whileInView="animate">
                 <motion.div className="textContainer" variants={variants}>
-                    <motion.h1>Let's work together</motion.h1>
+                    <motion.h1>Let's Connect</motion.h1>
                     <div className="contact--icons">
                         <motion.div className="item" variants={variants}>
                         <a href="https://www.linkedin.com/in/shahrukh-showkath/"><img className="icon" src="/linkedin.png"/></a>
