@@ -42,7 +42,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 1.25 }}
           >
             <h1 className="hero--h2">
-              I'm a current Master's student at Cornell studying computer science. I have been programming for over
+              I'm currently a Master's student at Cornell studying computer science. I have been programming for over
               5 years and have experience in CV, NLP, and Bayesian ML research
               as well as industry software engineering projects.
             </h1>
