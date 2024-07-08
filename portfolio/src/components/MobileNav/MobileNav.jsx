@@ -58,6 +58,7 @@ const MobileNav = () => {
         {['Home', 'Experience', 'Projects', 'About', 'Contact'].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton 
+            
               onClick={() => scrollToSection(text)}
               selected={activeSection === text}
             >
@@ -82,7 +83,23 @@ const MobileNav = () => {
         style={{ transform: 'scale(1.5)', marginTop: '3%', position: 'fixed', top: 10, left: 10, zIndex: 1000 }} 
         onClick={toggleDrawer(true)}
       >
-        <MenuIcon />
+        <MenuIcon  sx={{
+  transform: 'scale(1.5)',
+  marginTop: '3%',
+  position: 'fixed',
+  top: 10,
+  left: 20,
+  zIndex: 1000,
+  backgroundColor: 'rgba(255, 255, 255, 0.1)', // Slightly opaque background
+  borderRadius: '50%',
+  padding: '1px',
+  backdropFilter: 'blur(10px)', // Apply blur effect to the background
+  webkitBackdropFilter: 'blur(10px)', // For Safari support
+  '&:hover': {
+    backgroundColor: 'rgba(255, 255, 255, 0.3)', // Slightly more opaque on hover
+  },
+}}
+/>
       </Button>
       <Drawer open={open} onClose={toggleDrawer(false)}>
         {DrawerList}

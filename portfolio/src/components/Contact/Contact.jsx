@@ -38,7 +38,7 @@ export default function Contact () {
                         </motion.div>
                     </div>                
                 </motion.div>
-                <motion.div className="phoneSVG" initial={{opacity:1}} whileInView={{opacity:.5}} transition={{duration:3}}>
+                <motion.div className="phoneSVG" initial={{opacity:0}} whileInView={{opacity:1, strokeWidth:5}} transition={{duration:3, delay:1}}>
                     <svg fill="none" width="25rem" height="25rem" viewBox="0 0 64 64" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="_x32_5_attachment"/> <g id="_x32_4_office"/> <g id="_x32_3_pin"/> <g id="_x32_2_business_card"/> <g id="_x32_1_form"/> <g id="_x32_0_headset"/> <g id="_x31_9_video_call"/> <g id="_x31_8_letter_box"> <g> 
                         <path
 

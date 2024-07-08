@@ -51,7 +51,7 @@ export default function Landing() {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 1.5}}>
-                    {"Forever learning new things.".split("").map((char,index) => {
+                    {"Always learning new things.".split("").map((char,index) => {
                         return (
                             <motion.span key={char + "-" + index} variants={letter}>
                                 {char}

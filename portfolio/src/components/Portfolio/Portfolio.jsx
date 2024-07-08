@@ -72,7 +72,8 @@ const PortfolioCard = ({ project }) => {
                     <motion.img
                         className="portfolio--img"
                         ref={ref}
-                        animate={isInView ? { x: [1000, -100, 100, 0] } : {}}
+                        initial={{ opacity: 0 }}   
+                        animate={isInView ? { opacity: 1,x: [1000, -100, 100, 0] } : {}}
                         transition={{ type: "spring", inertia: 10, duration: 1 }}
                         src={project.img}
                         alt={project.title}
@@ -81,7 +82,8 @@ const PortfolioCard = ({ project }) => {
                 
                 <motion.div className="card--text"
                     ref={ref}
-                    animate={isInView ? { x: [1000, -100, 100, 0] } : {}}
+                    initial={{ opacity: 0 }}  
+                    animate={isInView ? {  opacity: 1, x: [1000, -100, 100, 0] } : {}}
                     transition={{ type: "spring", inertia: 10, duration: 1 }}>
                         <h1  className="card--titles" ><a href={project.link}>{project.title}<img src="/link.png"/></a></h1>
                         <h3 className="card--descriptions">{project.description}</h3>
