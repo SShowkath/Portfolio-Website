@@ -53,7 +53,7 @@ const MobileNav = () => {
   }, []);
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation">
+    <Box sx={{ width: 250 , backgroundColor:'#F0E2D2', height:'100%', color:'#5B6D92', fontWeight:'300'}} role="presentation">
       <List>
         {['Home', 'Experience', 'Projects', 'About', 'Contact'].map((text) => (
           <ListItem key={text} disablePadding>
@@ -63,11 +63,11 @@ const MobileNav = () => {
               selected={activeSection === text}
             >
               <ListItemIcon>
-                {text === "Home" && <HomeIcon />}
-                {text === "Experience" && <WorkIcon />}
-                {text === "Projects" && <AccountTreeIcon />}
-                {text === "About" && <PersonIcon />}
-                {text === "Contact" && <MailIcon />}
+                {text === "Home" && <HomeIcon sx={{color: '#D18266'}} />}
+                {text === "Experience" && <WorkIcon sx={{color: '#D18266'}}/>}
+                {text === "Projects" && <AccountTreeIcon sx={{color: '#D18266'}}/>}
+                {text === "About" && <PersonIcon sx={{color: '#D18266'}}/>}
+                {text === "Contact" && <MailIcon sx={{color: '#D18266'}}/>}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
@@ -84,6 +84,7 @@ const MobileNav = () => {
         onClick={toggleDrawer(true)}
       >
         <MenuIcon  sx={{
+          color: '#5B6D92',
   transform: 'scale(1.5)',
   marginTop: '3%',
   position: 'fixed',
