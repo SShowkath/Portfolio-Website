@@ -4,43 +4,62 @@ import { motion } from "framer-motion";
 
 export default function DesktopNavbar() {
     const [activeSection, setActiveSection] = useState("Home");
-    const [isVisible, setIsVisible] = useState(true);  // Start with true for debugging
+    const [isVisible, setIsVisible] = useState(true);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsVisible(window.innerWidth > 768); // Show navbar when width > 768px
+            setIsVisible(window.innerWidth > 768);
         };
 
         const handleScroll = () => {
-            const scrollPosition = window.scrollY;
+            const sections = ["Home", "Experience", "Projects", "About", "Contact"];
+            let maxVisibleArea = 0;
+            let currentActiveSection = "";
 
-            const sections = ["Home", "Experience", "Projects", "portfolio-end", "About", "Contact"];
+            sections.forEach((section) => {
+                let visibleArea = 0;
 
-            for (const section of sections) {
-                const element = document.getElementById(section);
-                if (element) {
-                    const { top, height } = element.getBoundingClientRect();
-                    if (top <= window.innerHeight * 0.5 && top + height > window.innerHeight * 0.5) {
-                        setActiveSection(section);
-                        break;
+                if (section === "Projects") {
+                    ["Projects", "portfolio-card"].forEach(id => {
+                        const element = document.getElementById(id);
+                        if (element) {
+                            const rect = element.getBoundingClientRect();
+                            const visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
+                            visibleArea += Math.max(0, visibleHeight) / window.innerHeight;
+                        }
+                    });
+                } else {
+                    const element = document.getElementById(section);
+                    if (element) {
+                        const rect = element.getBoundingClientRect();
+                        const visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
+                        visibleArea = Math.max(0, visibleHeight) / window.innerHeight;
                     }
                 }
+
+                if (visibleArea > maxVisibleArea) {
+                    maxVisibleArea = visibleArea;
+                    currentActiveSection = section;
+                }
+            });
+
+            // Only update if a new section is prominently visible
+            if (currentActiveSection !== "" && currentActiveSection !== activeSection) {
+                setActiveSection(currentActiveSection);
             }
         };
 
-        // Initial check
         handleResize();
+        handleScroll();
 
-        // Attach event listeners
         window.addEventListener("resize", handleResize);
         window.addEventListener("scroll", handleScroll);
 
-        // Clean up event listeners on component unmount
         return () => {
             window.removeEventListener("resize", handleResize);
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [activeSection]);
 
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
@@ -50,11 +69,8 @@ export default function DesktopNavbar() {
     };
 
     if (!isVisible) {
-        console.log("DesktopNavbar is not visible");
         return null;
     }
-
-    console.log("DesktopNavbar is rendering");
 
     return (
         <div className="navbar-container">
