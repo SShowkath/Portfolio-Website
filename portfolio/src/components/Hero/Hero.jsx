@@ -20,7 +20,7 @@ export default function Hero() {
               ref={titleRef}
               className="hero--h1"
               initial={{ opacity: 0 }}
-              animate={titleInView ? { opacity: 1, scale: [1, 1, 1, 1, 2, 1, 1, 1], x: 0 } : {}}
+              animate={titleInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 1.5 }}
             >
               ABOUT ME
